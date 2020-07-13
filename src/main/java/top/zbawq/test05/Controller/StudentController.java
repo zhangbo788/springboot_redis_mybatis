@@ -18,7 +18,7 @@ public class StudentController {
     @Autowired
     StudentServiceImp studentServiceImp;
 
-
+    //进行插入操作
     @GetMapping("/insert")
     public String insertStu(Student student,HttpSession session){
         session.setAttribute("loginUser",student.getName());
